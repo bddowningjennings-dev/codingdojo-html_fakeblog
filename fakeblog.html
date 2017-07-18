@@ -7,13 +7,89 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fake Blog</title>
-    <meta name="description" content="">
+    <meta name="description" content="This is a tribute page to Macho Man Randy Savage">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      #main_bod, h1, #muscles {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        position: center;
+      }
+      .main_img {
+        background-size: contain;
+      }
+      .center {
+        position: relative;
+        left: 25%;
+      }
+    </style>
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    test 2
+    <div id="main_bod">
+      <h1>Macho Man Randy Savage</h1>
+      <img class="main_img" src="http://img.bleacherreport.net/img/images/photos/002/318/574/macho-man-randy-savage-1_crop_exact.jpg?w=1200&h=1200&q=75" alt="cool picture of Macho Man Guy">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+    <table id="muscles" border="1">
+      <thead>
+        <tr>
+          <th>Body Part</th>
+          <th>How Macho it is</th>
+          <th>Oh Yeah?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Legs</td>
+          <td>Super Macho</td>
+          <td>Oh Yeah.</td>
+        </tr>
+        <tr>
+          <td>Arms</td>
+          <td>Even More Macho!</td>
+          <td>Oh Yeah, Brother!</td>
+        </tr>
+        <tr>
+          <td>Buttocks</td>
+          <td>Super Mundo Macho</td>
+          <td>You better believe!!</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul class="center">
+      <li>1945 - Born</li>
+      <li>1946 - 37 Machoest Baby Awards Earned</li>
+      <li>1944 - Recognized as World's Most Savage/Macho Man</li>
+      <li>1999 - Partied in amount in keeping with year.</li>
+    </ul>
+    <p class="center"><a href="">Link to Macho Footage</a></p>
+
+<!-- form, select, input type="text", input type="checkbox", input type="radio", input type="submit".form, select, input type="text", input type="checkbox", input type="radio", input type="submit". -->
+
+   <form class="center" action="/action_page.php" method="get">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name">
+      <select name="drop" id="drop">
+        <option value="isMacho">I'm Macho too!</option>
+        <option value="notMacho">I'm not that Macho :(</option>
+      </select>
+      <p>Are you Savage too?
+      <label for="sav">Yes</label>
+      <input type="radio" name="act_sav" id="sav">
+      <label for="act_sav">Hell Yes</label>
+      <input type="radio" name="act_sav" id="act_sav"></p>
+      <p>Are you a man?
+      <label for="man">Yes</label>
+      <input type="checkbox" name="gender" id="man">
+      <label for="other">Other</label>
+      <input type="checkbox" name="gender" id="other"></p>
+      <input type="submit" value="Submit">
+    </form>
+ 
   </body>
 </html>
